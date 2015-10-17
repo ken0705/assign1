@@ -16,11 +16,11 @@ void setup(){
   size(640,480);
   a=0 ;
   b=0 ;
-  g=floor(random(10,211));
-  c=floor(random(0,640));
-  d=floor(random(0,480));
-  e=floor(random(0,480));
-  f=floor(random(0,480));
+  g=floor(random(10,200));
+  c=floor(random(0,600));
+  d=floor(random(0,440));
+  e=floor(random(0,440));
+  f=floor(random(0,440));
   fill(255,0,0);
   rect(10,10,g,31);
   fighter=loadImage("img/fighter.png");
@@ -39,12 +39,12 @@ void draw(){
   fill(255,0,0);
   rect(15,10,g,31);
   image(hp,10,10);
-  image(enemy,b+20,e);
+  image(enemy,b,e);
   image(treasure,c,d);
   image(fighter,500,f);
   a += 1 ;
   b += 2 ;
   a %= 1280 ;
-  b %= 640 ;
-  
+  b %= 600 ;
+  f %= 440 ;
 }
